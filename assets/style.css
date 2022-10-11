@@ -86,8 +86,9 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
-    overflow: hidden;
+
 }
+
 #nav, .subnav {
     list-style-type: none;
 }
@@ -525,6 +526,10 @@ html {
         display: block;
     }
 
+    #header {
+        overflow: hidden;
+    }
+
     #nav > li {
         display: block;
     }
@@ -538,6 +543,16 @@ html {
     }
     #header .search-btn {
         display: none;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background: #333;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 40px;
     }
 
 
