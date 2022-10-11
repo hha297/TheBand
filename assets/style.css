@@ -74,10 +74,6 @@ html {
 
 /* main */
 
-#main {
-
-}
-
 #nav {
     display: inline-block;
 }
@@ -198,15 +194,16 @@ html {
 }
 
 
-#content {
-    
-}
+
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 8px;
 }
 
 #content .section-heading {
