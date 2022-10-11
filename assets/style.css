@@ -22,6 +22,10 @@ html {
     margin-right: -8px;
 }
 
+.mt-16 {
+    margin-top:16px;
+}
+
 /* .row::after {
     content: "";
     display: block;
@@ -304,7 +308,7 @@ html {
 }
 
 .place-list {
-    margin-top: 32px;
+    margin-top: 16px;
     overflow: hidden;
     padding-bottom: 50px;
 }
@@ -349,6 +353,16 @@ html {
     font-size: 18px;
     line-height: 1.6;
     margin-top: 15px;
+}
+
+.contact-info a {
+    color: red;
+    opacity: 0.6;
+    
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-info i[class*="ti-"] {
@@ -516,12 +530,23 @@ html {
 }
 
 /* Tablet */
-@media (max-width: 1023px) and (max-width: 740px) {
+@media (max-width: 1023px) and (min-width: 740px) {
+    #footer .social-list a {
+        margin: 0 16px;
+    }
 
+    #footer .copyright {
+        padding: 16px 0;
+    } 
+    
 }
 
 /* Mobile */
 @media (max-width: 740px) {
+    .s-col-full, .s-full-wwidth {
+        width: 100%;
+    }
+
     #nav {
         display: block;
     }
@@ -547,7 +572,7 @@ html {
 
     #nav .subnav {
         position: initial;
-        background: #333;
+        background:#000;
     }
 
     #nav .subnav a {
@@ -555,5 +580,33 @@ html {
         padding: 5px 40px;
     }
 
+    #content .member-item {
+        margin-top: 30px;
+        width: 100%;
+    }
 
+    #content .member-img {
+        width: 60%;
+    }
+
+    #content .contact-form {
+        margin-top: 16px;
+    }
+
+    #content .contact-info {
+        margin-bottom: 16px;
+    }
+
+    #content .contact-content {
+        margin: 32px 8px;
+    }
+
+    #footer .social-list a {
+        margin: 0 8px;
+    }
+
+    #footer .copyright {
+        padding: 8px 0;
+        display: inline-block;
+    } 
 }
