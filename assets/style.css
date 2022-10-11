@@ -526,11 +526,20 @@ html {
 
 /* PC */
 @media (max-width: 1024px) {
-    
+
 }
 
 /* Tablet */
 @media (max-width: 1023px) and (min-width: 740px) {
+    #slider .text-content {
+        top: calc(100% - 75px);
+    }
+
+    #slider .text-heading, #slider .text-description {
+        font-size: 16px;
+        margin: 10px;
+    }
+
     #footer .social-list a {
         margin: 0 16px;
     }
@@ -578,6 +587,15 @@ html {
     #nav .subnav a {
         color: #fff;
         padding: 5px 40px;
+    }
+
+    #slider .text-content {
+        top: calc(100% - 60px);
+    }
+
+    #slider .text-heading, #slider .text-description {
+        font-size: 12px;
+        margin: 10px;
     }
 
     #content .member-item {
